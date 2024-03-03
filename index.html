@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wynk</title>
+    <!-- <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.min.js"></script> -->
+    <style>
+      div {
+        /* height:60px;
+            width:1100px; */
+        background-color: black;
+        border: 2px solid black;
+        display: flex;
+      }
+      h3 {
+        color: white;
+        margin-top: 6px;
+      }
+      .icon {
+        background-color: #23232366;
+        border: 5px solid #21252D;
+        border-radius: 100px;
+
+        color: white;
+        background-image: url(../assets/searchicon.jpg);
+        background-repeat: no-repeat;
+       background-size: 30px 30px;
+        padding-left: 40px !important;
+        padding: 5px;
+        margin-top: 10px;
+      }
+      .icon2{
+        background-color: black;
+        background-image: url(../assets/w8.img);
+        background-repeat: no-repeat;
+        background-size: 70px 40px;
+        padding-left: 40px !important;
+      }
+      .icon3{
+        background-color: black;
+        background-image: url(../assets/w9.jpg);
+        background-repeat: no-repeat;
+        background-size: 70px 40px;
+        padding-left: 40px !important;
+      }
+      .cd {
+        /* height:60px;
+            width:1100px; */
+        background-color: black;
+        border: 2px solid black;
+        display: flex;
+        padding-top: 10px;
+      }
+      section {
+        height: 400px;
+        width: 1800px;
+        background-color: black;
+      }
+      .md {
+        height: 600px;
+        width: 1100px;
+        background-color: black;
+        display: inline-block;
+        overflow: scroll;
+        
+      }
+      .c1{
+        height:500px;
+        width:1100px;
+        /* border:1px solid white; */
+         margin-left: 20px; 
+        animation-name:anim1;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+      }
+      @keyframes anim1{
+            0%{
+                background-image: url(../assets/ani1.jpg);
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-position:center;
+                
+            }
+            20%{
+                background-image: url(../assets/anim2.jpg);
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-position:center;
+            }
+            40%{
+                background-image: url(../assets/anim3.jpg);
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-position:center;
+            } 
+            60%{
+                background-image: url(../assets/anim4.jpg);
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-position:center;
+            } 
+            80%{
+                background-image: url(../assets/anim5.jpg);
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-position:center;
+            } 
+        }
+      
+
+        
+    </style>
+  </head>
+  <body>
+    <div class="md">
+      <div>
+        <ul
+          style="display: flex; justify-content: flex-start; padding-top: 10px"
+        >
+          <li type="none">
+            <img
+              style="border-radius: 100px"
+              src="../assets/wynk.jpg"
+              height="40px"
+              width="40px"
+            />
+          </li>
+          <h3>Wynk Music</h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input style="background-color: #21252D;"
+            class="icon"
+            type="textarea"
+            placeholder="search songs"
+            name="searchsong"
+          />&nbsp;&nbsp;&nbsp;&nbsp;
+          <li type="none" style="color: white"><a style="text-decoration: none;" href="./wynklogin.html"target="_blank;"><h3>Manage Subscription</h3></a>
+          
+          
+          </li>
+          &nbsp;&nbsp;
+          <li type="none" style="color: white; padding: 6px">|</li>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li>
+            <img src="../assets/profile.jpg" height="30px" width="30px" />
+          </li>
+          &nbsp;&nbsp;
+          <li style="color: white" type="none"><a style="text-decoration: none;" href="./wynklogin.html"target="_blank;"><h3>login</h3></a></li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li type="none">
+            <img src="../assets/hamberger.jpg" height="30px" width="30px" />
+          </li>
+        </ul>
+      </div>
+      <div class="cd">
+        <ul style="display: flex; justify-content: flex-start">
+          <li style="color: gray" type="none">All</li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li style="color: gray" type="none">Trending Now</li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li style="color: gray" type="none">Old Songs</li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li style="color: gray" type="none">New songs</li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li style="color: gray; background-color: black" type="none">
+            <select
+              style="color: gray; background-color: black; border: solid black"
+            >
+              <option value="Moods&Genre">Moods&Genre</option>
+              <option value="Party Songs">Party Songs</option>
+              <option value="Dance Songs">Dance Songs</option>
+              <option value="Bollywood Songs">Bollywood Songs</option>
+              <br />
+            </select>
+          </li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li type="none">
+            <select
+              style="color: gray; background-color: black; border: solid black"
+            >
+              <option value="Top Albums">Top Albums</option>
+              <option value="Top Hindi Albums">Top Hindi Albums</option>
+              <option value="Top English Albums">Top English Albums</option>
+              <option value="Top Telugu Albums">Top Telugu Albums</option>
+              <option value="Top Tamil Albums">Top Tamil Albums</option>
+            </select>
+          </li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li style="color: gray; background-color: black" type="none">
+            Top Artists
+          </li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li type="none">
+            <select
+              style="color: gray; background-color: black; border: solid black"
+            >
+              <option value="Top Playlists">Top Playlists</option>
+              <option value="Wynk Top 100 Songs">Wynk Top 100 Songs</option>
+              <option value="Trending Hindi Songs">Trending Hindi Songs</option>
+              <option value="Top English Songs">Top English Songs</option>
+              <option value="Trending Reels Songs">Trending Reels Songs</option>
+            </select>
+          </li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li style="color: gray; background-color: black" type="none">
+            Podcast
+          </li>
+        </ul>
+      </div>
+     <div class="c1">
+
+     </div> 
+      <section>
+        <div style="display: inline-block; margin-left: 40px">
+          <h1 style="color: white">Recently Played</h1>
+          <div style="display: inline-block">
+            <img src="../assets/song1.jpg" height="100px" width="150px" />
+            <p style="color: white">Bloody Mary</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s2.jpg" height="150px" width="150px" />
+            <p style="color: white">Night Changes</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s3.jpg" height="150px" width="150px" />
+            <p style="color: white">Animal Album</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s4.jpg" height="150px" width="150px" />
+            <p style="color: white">Dandlions</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/song.jpg" height="150px" width="150px" />
+            <p style="color: white">Arcade</p>
+          </div>
+        </div>
+        <div style="display: inline-block; margin-left: 40px; height: 200px">
+          <h1 style="color: white">New Realses</h1>
+          <div style="display: inline-block">
+            <img src="../assets/s5.jpg" height="150px" width="150px" />
+            <p style="color: white">Crakk Jeetega songs</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s6.jpg" height="150px" width="150px" />
+            <p style="color: white">Walker World</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s7.jpg" height="150px" width="150px" />
+            <p style="color: white">Street Dreams</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s8.jpg" height="150px" width="150px" />
+            <p style="color: white">1989(taylors version)</p>
+          </div>
+
+          <div style="display: inline-block">
+            <img src="../assets/s9.jpg" height="150px" width="150px" />
+            <p style="color: white">Article 370</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s10.jpg" height="150px" width="150px" />
+            <p style="color: white">For All The Dogs</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s11.jpg" height="150px" width="150px" />
+            <p style="color: white">Teri Batoon Mein...</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s13.jpg" height="150px" width="150px" />
+            <p style="color: white">Kuchh Katta Ho Ja..</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/song1.jpg" height="150px" width="150px" />
+            <p style="color: white">New English Songs</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s14.jpg" height="150px" width="150px" />
+            <p style="color: white">GUTS</p>
+          </div>
+        </div>
+        <div style="display: inline-block; margin-left: 40px">
+          <h1 style="color: white">Top Charts</h1>
+          <div style="display: inline-block">
+            <img src="../assets/s15.jpg" height="150px" width="150px" />
+            <p style="color: white">Weekely Top 20</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s16.jpg" height="150px" width="150px" />
+            <p style="color: white">Wynk top 100</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s17.jpg" height="150px" width="150px" />
+            <p style="color: white">Romance top 20</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s18.jpg" height="150px" width="150px" />
+            <p style="color: white">pop up top 20</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s19.jpg" height="150px" width="150px" />
+            <p style="color: white">Dance top 20</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s8.jpg" height="150px" width="150px" />
+            <p style="color: white">Wynk top 100</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s11.jpg" height="150px" width="150px" />
+            <p style="color: white">popular top 100</p>
+          </div>
+        </div>
+        <div style="display: inline-block; margin-left: 40px">
+          <h1 style="color: white">Indie Music</h1>
+          <div style="display: inline-block">
+            <img src="../assets/s20.jpg" height="150px" width="150px" />
+            <p style="color: white">Indie Music</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s24.jpg" height="150px" width="150px" />
+            <p style="color: white">Beyond Bollywood</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s25.jpg" height="150px" width="150px" />
+            <p style="color: white">North East Indie</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s26.jpg" height="150px" width="150px" />
+            <p style="color: white">New Age Indie Pop</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s27.jpg" height="150px" width="150px" />
+            <p style="color: white">Indie English</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s28.jpg" height="150px" width="150px" />
+            <p style="color: white">Hip Hop India</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s29.jpg" height="150px" width="150px" />
+            <p style="color: white">Soul Indie</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s30.jpg" height="150px" width="150px" />
+            <p style="color: white">Latest Indie</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s23.jpg" height="150px" width="150px" />
+            <p style="color: white">Women In Indie</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/s31.jpg" height="150px" width="150px" />
+            <p style="color: white">Indie Rock</p>
+          </div>
+        </div>
+        <div style="display: inline-block; margin-left: 40px">
+          <h1 style="color: white">Top Indie Artists</h1>
+          <div style="display: inline-block">
+            <img
+              style="border-radius: 100px"
+              src="../assets/p1.jpg"
+              height="150px"
+              width="150px"
+            />
+            <p style="color: white">prateek kuhad</p>
+          </div>
+          <div style="display: inline-block">
+            <img
+              style="border-radius: 100px"
+              src="../assets/p2.jpg"
+              height="150px"
+              width="150px"
+            />
+            <p style="color: white">Nikhita Gandhi</p>
+          </div>
+          <div style="display: inline-block">
+            <img
+              style="border-radius: 100px"
+              src="../assets/p3.jpg"
+              height="150px"
+              width="150px"
+            />
+            <p style="color: white">Ritviz</p>
+          </div>
+          <div style="display: inline-block">
+            <img
+              style="border-radius: 100px"
+              src="../assets/p4.jpg"
+              height="150px"
+              width="150px"
+            />
+            <p style="color: white">Lucky Ali</p>
+          </div>
+          <div style="display: inline-block">
+            <img
+              style="border-radius: 100px"
+              src="../assets/p5.jpg"
+              height="150px"
+              width="150px"
+            />
+            <p style="color: white">Zaeden</p>
+          </div>
+          <div style="display: inline-block">
+            <img
+              style="border-radius: 100px"
+              src="../assets/p6.jpg"
+              height="150px"
+              width="150px"
+            />
+            <p style="color: white">Reena Gilbert</p>
+          </div>
+        </div>
+        <div style="display: inline-block; margin-left: 40px">
+          <h1 style="color: white">International Top Hits</h1>
+          <div style="display: inline-block">
+            <img src="../assets/i1.img" height="150px" width="150px" />
+            <p style="color: white">Calm Down</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/i2.img" height="150px" width="150px" />
+            <p style="color: white">Perfect</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/i3.img" height="150px" width="150px" />
+            <p style="color: white">Love Me Like Y..</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/i4.img" height="150px" width="150px" />
+            <p style="color: white">Gasolina</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/i5.img" height="150px" width="150px" />
+            <p style="color: white">Unstoppable</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/i6.jpg" height="150px" width="150px" />
+            <p style="color: white">Let Me Love You</p>
+          </div>
+          <div style="display: inline-block">
+            <img src="../assets/i7.jpg" height="150px" width="150px" />
+            <p style="color: white">Baby</p>
+          </div>
+        </div>
+        <div style="display: inline-block; margin-left: 40px">
+          <h1 style="color: white">Your Library</h1>
+          <div style="display: inline-block">
+            <img src="../assets/w1.img" height="150px" width="150px" />
+            <p style="color: white">Liked Songs</p>
+          </div>
+          <div style="display: inline-block">
+            <div style="display: inline-block">
+              <img src="../assets/w2.img" height="150px" width="150px" />
+              <p style="color: white">Downloads</p>
+            </div>
+            <div style="display: inline-block">
+              <img src="../assets/w5.img" height="150px" width="150px" />
+              <p style="color: white">Recently Played</p>
+            </div>
+            <div style="display: inline-block">
+              <img src="../assets/w4.jpg" height="150px" width="150px" />
+              <p style="color: white">Your Playlist</p>
+            </div>
+          </div>
+          <div
+            style="
+              border: 2px solid white;
+              height: 500px;
+              width: 800px;
+              display: block !important;
+            "
+          >
+            
+            <div style="display: block">
+              <h1 style="color: white">About Wynk Music</h1>
+           
+            <p style="color: white">
+              Wynk Music is a complete package that allows you free online music
+              streaming, set caller tunes, listen to podcasts, download MP3
+              music offline, and much more! Since music is essentially the only
+              thing that can truly understand a person, we consistently offer
+              our audience the ideal blend of MP3 Songs by their favourite
+              artists and of versatile genres.
+            </p>
+          </div>
+          <div style="display: block">
+            <h1 style="color: white">
+              Play & Download FREE MP3 Songs in all languages
+            </h1>
+            <p style="color: white">
+              One of the unique features of Wynk Music is that it offers users
+              the ability to stream music in multiple regional languages,
+              including Hindi, Punjabi, Bengali, Tamil, Telugu, and more. Also,
+              users of the app can download MP3 songs for offline listening.
+              This online music platform provides access to additional features
+              such as offline listening, high-quality audio, and exclusive
+              content.
+            </p>
+          </div>
+          <div style="display: block">
+            <h1 style="color: white">
+              Wynk Music One Stop Destination for Offline & Online Music!
+            </h1>
+            <p style="color: white">
+              Wynk Music offers users access to a vast library of music,
+              including Indian and international tracks across various genres
+              like Bollywood, Punjabi, pop, rock, and more. We have made online
+              music streaming simple, fun, and all about you! So, what’s the
+              wait for, discover and listen to millions of songs, playlists,
+              podcasts & download MP3 songs on any device including mobile for
+              free exclusively on Wynk Music. Keep Wynking!
+            </p>
+          </div>
+        </div>
+        <div  style="display: inline-block; background-color: #21252D;height:120px;width:804px;">
+          <ul
+          style="display: flex; justify-content: flex-start; padding-top: 10px"
+        >
+          <li type="none">
+            <img
+              style="border-radius: 100px"
+              src="../assets/wynk.jpg"
+              height="40px"
+              width="40px"
+            />
+          </li>
+          <li type="none"><h2 style="color:white;margin-top: 5px;">Best way to Listen to Music!</h2>
+          <p style="color:white;">
+            Don’t forget to install Wynk Music on your mobile phones
+          </p></li>&nbsp;&nbsp;&nbsp;&nbsp;
+          <li type="none">
+            <button  class="icon2"style="height:60px;width:150px;"><a style="text-decoration: none;" href="./wynkdownload.html"target="_blank"><p style="color:white">Get It On Google Play Store</p></a></button>
+          </li>&nbsp;&nbsp;&nbsp;&nbsp;
+          <li type="none">
+            <button  class="icon3"style="height:60px;width:150px;"><a style="text-decoration: none;" href="./wynkdownload.html"target="_blank"><p style="color:white">Download On The App Store</p></a></button>
+          </li>
+        
+      </ul>
+        </div><br>
+
+
+
+
+
+         <div  style="display: inline-block; background-color:black;height:400px;width:804px;">
+          <ul
+          style="display: flex; justify-content: flex-start; padding-top: 10px"
+        >
+        <li type="none">
+          <h2 style="color:white;">LATEST ALBUMS</h2>
+          <p style="color:gray">Walkerworld  |  Crakk - Jeetegaa Toh Jiyegaa  |  Vikram Original Motion Picture Soundtrack  |  Thallumaala  |  Pushpa - The Rise  |  Ninna Sanihake  |  Praktan  |  Leo  |  Bhavartha Mauli  |  Yuva Sarkar  |  Mal mahu jiban mati  |  1989 (Taylor's Version)</p>
+        </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li type="none">
+          <h2 style="color:white;">EXPLORE MUSIC GENRES</h2>
+          <p style="color:gray">Rock Songs  |  Patriotic songs  |  Sufi Music  |  Ghazals  |  Workout Music  |  Devotional Songs  |  Sad Songs  |  DJ Songs</p>
+        </li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li type="none">
+          <h2 style="color:white;">OLD SONGS</h2>
+          <p style="color:gray">Old  Songs  |  Old Hindi Songs  |  Old English Songs  |  Old Punjabi Songs  |  Old Telugu Songs  |  Old Tamil Songs  |  Old Bengali Songs  |  Old Malayalam Songs  |  Old Kannada Songs</p>
+        </li>&nbsp;&nbsp;&nbsp;
+
+        <li type="none">
+          <h2 style="color:white;">TOP ARTISTS</h2>
+          <p style="color:gray">Guru Randhawa  |  Arijit Singh  |  Atif Aslam  |  Justin Bieber  |  Gulzar  |  Armaan Malik  |  Sidhu Moose Wala  |  Alan Walker  |  Udit Narayan  |  Sonu Nigam  |  Sid Sriram  |  Akhil  |  Darshan Raval  |  Shreya Ghoshal  |  Alka Yagnik</p>
+        </li>&nbsp;&nbsp;&nbsp;
+        </ul>
+        </div><br>
+        
+        <div  style="display: inline-block; background-color:black;height:300px;width:804px;">
+          <ul
+          style="display: flex; justify-content: flex-start; padding-top: 10px"
+        >
+         <li type="none">
+          <h2 style="color:white;">REGIONAL PLAYLISTS</h2>
+          <p style="color:gray">Guru Randhawa  |  Arijit Singh  |  Atif Aslam  |  Justin Bieber  |  Gulzar  |  Armaan Malik  |  Sidhu Moose Wala  |  Alan Walker  |  Udit Narayan  |  Sonu Nigam  |  Sid Sriram  |  Akhil  |  Darshan Raval  |  Shreya Ghoshal  |  Alka Yagnik</p>
+        </li> 
+        <li type="none">
+          <h2 style="color:white;">LATEST SONGS</h2>
+          <p style="color:gray">Daaku  |  Zindagi Tere Naam (From "Yodha")  |  Nirmohi  |  Halki Halki Si  |  Class (From "Showtime")  |  Zaalim  |  Bade Miyan Chote Miyan Title Track  |  Ishq-E-Jaan  |  Galti  |  Ishq Mehfooz (Waiting On You)  |  Bin Tere  |  Top Class / Overseas  |  Tum Se (From "Teri Baaton Mein Aisa Uljha Jiya")  |  Saiyyan  |  Dhokhha Wahi</p>
+        </li>
+        <li type="none">
+          <h2 style="color:white;">TRENDING SONGS</h2>
+          <p style="color:gray">Akhiyaan Gulaab (From "Teri Baaton Mein Aisa Uljha Jiya")  |  O Maahi (From "Dunki")  |  Satranga (From "ANIMAL")  |  Pehle Bhi Main  |  Teri Baaton Mein Aisa Uljha Jiya Title Song (From "Teri Baaton Mein Aisa Uljha Jiya")  |  Husn  |  Kabhi Shaam Dhale  |  Kurchi Madathapetti  |  Zihaal e Miskin  |  Tu Meri Hai  |  Chaleya (From "Jawan")  |  Tum Se (From "Teri Baaton Mein Aisa Uljha Jiya")  |  Arjan Vailly  |  Ve Haaniyaan  |  Heeriye (feat. Arijit Singh)</p>
+        </li>
+        <li type="none">
+          <h2 style="color:white;">SONGS WITH LYRICS
+          </h2>
+          <p style="color:gray">Coca Cola  |  Bom Diggy Diggy  |  Machayenge  |  Tera Yaar Hoon Main  |  Kar Gayi Chull (From "Kapoor & Sons (Since 1921)")  |  Morni Banke  |  Chalti Hai Kya 9 Se 12  |  Hawayein</p>
+        </li>
+
+
+
+      </ul>
+
+
+      </div> <br>
+       
+      <div  style="display: inline-block; background-color:black;height:180px;width:804px;position: relative;top:200px;">
+        <ul
+        style="display: flex; justify-content: flex-start; padding-top: 10px"
+      >
+      <li type="none">
+        <h2 style="color:white;">WYNK TOP HITS</h2>
+        <p style="color:gray">Top 20 Bollywood Songs  |  Wynk Top 100 Songs  |  Top 20 English Songs  |  Trending Reels Songs</p>
+      </li>
+      <li type="none">
+        <h2 style="color:white;">DEVOTIONAL SONGS</h2>
+        <p style="color:gray">Ganesh Ji Ki Aarti  |  Laxmi Ji Ki Aarti  |  Shri Hanuman Chalisa  |  Shiv Bhajan  |  Gurbani  |  Gurbani Shabad  |  Islamic Songs  |  Jesus Songs  |  Christian Songs</p>
+      </li>
+      <li type="none">
+        <h2 style="color:white;">JOIN WYNK FOR ARTISTS</h2>
+        <p style="color:gray">Wynk Studio  |  Wynk Studio for Artists</p>
+      </li>
+    </div><br>
+   
+    <div style=" border:1px solid gray !important; display:inline-block; background-color:black;height:50px;width:1000px;margin-bottom:0px;margin-top: 280px;;">
+      <ul
+      style="display: flex; justify-content: flex-start; padding-top: 10px"
+    >
+        <li  type="none"style="color:white">ABOUT US</li>&nbsp;&nbsp;
+        <li type="none" style="color: white; padding: 0px">|</li>&nbsp;
+        <li  type="none"style="color:white">
+          PRIVACY POLICY</li>&nbsp;&nbsp;
+          <li type="none" style="color: white; padding: 0px">|</li>&nbsp;
+        <li  type="none"style="color:white">
+          TERMS OF USE</li>&nbsp;&nbsp;
+          <li type="none" style="color: white; padding: 0px">|</li>&nbsp;
+        <li  type="none"style="color:white">CONTACT US</li>&nbsp;&nbsp;
+        <li type="none" style="color: white; padding: 0px">|</li>&nbsp;
+        <li  type="none"style="color:white">
+          HELLOTUNES</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<li type="none" ><a href="https://www.facebook.com/WynkMusic"target="_blank"><img style="position: relative;bottom:15px;border-radius: 50px;border:1px solid gray;" src="../assets/fb.jpg"height="30px"width="30px"></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<li type="none" ><a href="https://www.instagram.com/"target="_blank"><img style="position: relative;bottom:15px;border-radius: 50px;border:1px solid gray;" src="../assets/insta.jpg"height="30px"width="30px"></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<li type="none" ><a href="https://www.youtube.com/channel/UC3uWLPqsBOlYS6FLhWYwxJg"target="_blank"><img style="position: relative;bottom:15px;border-radius: 50px;border:1px solid gray;" src="../assets/yt.jpg"height="30px"width="30px"></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<li type="none" ><a href="https://twitter.com/WynkMusic"target="_blank"><img style="position: relative;bottom:15px;border-radius: 50px;border:1px solid gray;" src="../assets/twittwr.jpg"height="30px"width="30px"></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+
+
+</ul>
+
+    </div>
+  
+      </section>
+   
+     
+    </div>
+  </body>
+</html>
